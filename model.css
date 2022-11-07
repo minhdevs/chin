@@ -1,0 +1,66 @@
+body {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: #303030;
+}
+
+.heart {
+  position: absolute;
+  width: 99px;
+  height: 159px;
+  top: 50%;
+  left: calc(50% + 14px);
+  transform: translate(-50%, -50%);
+  -webkit-animation: chinn 1s 1s infinite linear forwards;
+          animation: chinn 1s 1s infinite linear forwards;
+}
+
+@-webkit-keyframes chinn {
+  0% {
+    width: 90px;
+    height: 150px;
+  }
+  50% {
+    width: 99px;
+    height: 159px;
+  }
+  100% {
+    width: 90px;
+    height: 150px;
+  }
+}
+
+@keyframes chinn {
+  0% {
+    width: 90px;
+    height: 150px;
+  }
+  50% {
+    width: 99px;
+    height: 159px;
+  }
+  100% {
+    width: 90px;
+    height: 150px;
+  }
+}
+.left, .right {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px 50px 0px 0px;
+  background: #BFABDC;
+}
+
+.left {
+  left: -50px;
+  transform: rotate(-45deg);
+}
+
+.right {
+  left: -7px;
+  transform: rotate(45deg);
+}/*# sourceMappingURL=model.css.map */
